@@ -1,0 +1,195 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #6435e8;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #161616;
+}
+::-webkit-scrollbar:hover {
+  width: 15px; /* Increase the width of the scrollbar on hover */
+}
+
+/* Change color of scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: grab;
+}
+
+@font-face {
+  font-family: PoppinsR;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: PoppinsSB;
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: PoppinsM;
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: PoppinsB;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: PoppinsL;
+  src: url("./assets/fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: Ral;
+  src: url("./assets/fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: Rm;
+  src: url("./assets/fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: RSb;
+  src: url("./assets/fonts/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: OpenSans;
+  src: url("./assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+.maindog {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 90%;
+  height: auto;
+}
+
+.orangebox {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.maintext {
+  color: #F9860B;
+}
+
+.maintext::before {
+  content: "INU";
+  position: absolute;
+  right: 5px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+
+}
+
+.FeatureDog {
+  max-width: 100%;
+  height: auto;
+}
+
+.supstyle {
+  font-size: 95px;
+
+  @media(max-width:600px) {
+    font-size: 40px;
+  }
+}
+
+
+body {
+  background-color: #000;
+}
+
+@keyframes Blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+.MuiDialog-container{
+  .MuiPaper-root{
+    background-color:#141714 !important;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    padding: 20px;
+  }
+}
+
+.MuiPaper-elevation8 {
+  background-color: #272727 !important;
+}
+.poi-info-window div, .poi-info-window a,
+.gm-style-iw-d,
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track, 
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece,
+.gm-style .gm-style-iw-c,
+.gm-style .gm-style-iw-t::after { 
+  color: #fff !important;
+  background: #8257f9 !important;
+}
+.gm-style-iw-tc::after { 
+  display:none !important;
+}
+.poi-info-window a{
+  color: #61dafb !important;
+}
+@media (max-width: 600px) {
+  .map-container>div {
+    height: 400px !important; /* Set height for smaller screens */
+  }
+}
+
+.colordBox{
+  background:linear-gradient(to bottom,#281E49,#0B0B0B);
+  box-shadow:inset 0 0 17px #7E58FC;
+  border-radius:10px;
+} 
+ 
+.MuiPaper-root{  
+  background-color: transparent !important;
+  &>.MuiList-root{  
+    background-color: transparent !important;
+    &>.MuiTypography-root{  
+      &>.MuiButtonBase-root{  
+        margin-bottom: 10px; 
+        padding: 5px 10px; 
+        color:white ;
+        background-color:#070707; 
+        min-width: 170px; 
+        justify-content: center; 
+        font-size: 14px; 
+        @media(max-width:599px){  
+          
+        }
+      }
+    }
+  }
+} 
+
+.MuiButtonBase-root{   
+    &>.MuiTouchRipple-root{ 
+      display: none !important;
+    }
+  } 
+ 
+.MuiPaper-root{ 
+  &>.MuiButtonBase, .MuiAccordionSummary-root{ 
+    position:relative !important; 
+    z-index: 9999 !important;
+  }
+}
